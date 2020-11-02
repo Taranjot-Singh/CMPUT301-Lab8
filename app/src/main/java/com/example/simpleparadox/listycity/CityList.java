@@ -77,4 +77,21 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    /**
+     * Return the number of cities in a specific province
+     * @param province
+     *      The province to count cities in
+     * @return
+     *      Size of city list
+     */
+    public int countCitiesInProvince(String province) {
+        int count = 0;
+        for(City c: cities) {
+            if (c.getProvinceName().equals(province)) {
+                count++;
+            }
+        }
+        return count;
+    }
 }
