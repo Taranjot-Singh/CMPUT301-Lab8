@@ -83,7 +83,7 @@ public class CityList {
      * @param province
      *      The province to count cities in
      * @return
-     *      Size of city list
+     *      Number of cities in the list within the given province
      */
     public int countCitiesInProvince(String province) {
         return 0;
